@@ -1,0 +1,10 @@
+
+<h1>Add Movie</h1>
+<form action="{% url 'add.movie' %}" method="POST">
+    {% csrf_token %}
+     <input type="title" id="title" name="title" placeholder="Movie title" value=""/>
+     <input type="text" id="year" name="year" placeholder="1945" value=""/>
+     <input type="submit" value="Add"/>
+</form>
+
+<a href="{% url 'movies' %}">List of movies</a>

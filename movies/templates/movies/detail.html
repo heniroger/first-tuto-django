@@ -1,0 +1,5 @@
+<p>{{movie.title}}</p>
+<p><b>{{movie.year}}</b></p>
+<a href="{% url 'delete.movie' movie.id %}">Delete</a>
+<br/>
+<a href="{% url 'movies' %}">List of movies</a>
